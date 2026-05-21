@@ -1,1 +1,58 @@
+.App {
+  padding: 20px;
+}
 
+h1 {
+  font-family: "Playfair Display SC", serif;
+  text-align: center;
+  font-size: 64px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  vertical-align: top;
+}
+
+/* zebra striping */
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+/* column widths */
+th:nth-child(4),
+td:nth-child(4),
+th:nth-child(5),
+td:nth-child(5) {
+  width: 30%;
+}
+
+th:nth-child(1),
+td:nth-child(1),
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(6),
+td:nth-child(6) {
+  width: 10%;
+}
+
+/* scrollable text */
+.content_td p {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+/* image styling */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
