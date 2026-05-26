@@ -4,6 +4,7 @@ function Recipe({ recipe, index, deleteRecipe }) {
   return (
     <tr>
       <td>{recipe.name}</td>
+
       <td>{recipe.cuisine}</td>
 
       <td>
@@ -19,7 +20,10 @@ function Recipe({ recipe, index, deleteRecipe }) {
       </td>
 
       <td>
-        <button name="delete" onClick={() => deleteRecipe(index)}>
+        <button
+          name="delete"
+          onClick={() => deleteRecipe(index)}
+        >
           Delete
         </button>
       </td>
