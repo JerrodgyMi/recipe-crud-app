@@ -1,4 +1,3 @@
-
 .App {
   padding: 20px;
 }
@@ -16,24 +15,17 @@ table {
 
 th,
 td {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   padding: 8px;
   vertical-align: top;
 }
 
-/* zebra striping */
+/* Zebra striping */
 tbody tr:nth-child(odd) {
   background-color: #fff0c7;
 }
 
-/* column widths */
-th:nth-child(4),
-td:nth-child(4),
-th:nth-child(5),
-td:nth-child(5) {
-  width: 30%;
-}
-
+/* Column widths */
 th:nth-child(1),
 td:nth-child(1),
 th:nth-child(2),
@@ -45,15 +37,35 @@ td:nth-child(6) {
   width: 10%;
 }
 
-/* scrollable text */
+th:nth-child(4),
+td:nth-child(4),
+th:nth-child(5),
+td:nth-child(5) {
+  width: 30%;
+}
+
+/* Scrollable content */
 .content_td p {
   max-height: 100px;
   overflow-y: auto;
 }
 
-/* image styling */
+/* Images */
 img {
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+}
+
+/* Form styling */
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
 }
