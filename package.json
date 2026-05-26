@@ -1,8 +1,8 @@
-"homepage": "https://jerrodgym.github.io/recipe-crud-app"
 {
   "name": "recipe-crud-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jerrodgym.github.io/recipe-crud-app",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -11,5 +11,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
