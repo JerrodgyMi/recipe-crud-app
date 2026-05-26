@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const initialFormState = {
+const initialFormData = {
   name: "",
   cuisine: "",
   photo: "",
@@ -9,19 +9,23 @@ const initialFormState = {
 };
 
 function RecipeCreate({ createRecipe }) {
-  const [formData, setFormData] = useState(initialFormState);
+  const [formData, setFormData] = useState(initialFormData);
 
-  const handleChange = (event) => {
+  // Handle input changes
+  const handleChange = ({ target }) => {
     setFormData({
       ...formData,
-      [event.target.name]: event.target.value,
+      [target.name]: target.value,
     });
   };
 
+  // Handle submit
   const handleSubmit = (event) => {
     event.preventDefault();
+
     createRecipe(formData);
-    setFormData(initialFormState);
+
+    setFormData(initialFormData);
   };
 
   return (
@@ -31,46 +35,49 @@ function RecipeCreate({ createRecipe }) {
           <tr>
             <td>
               <input
+                type="text"
                 name="name"
+                placeholder="Name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Name"
               />
             </td>
 
             <td>
               <input
+                type="text"
                 name="cuisine"
+                placeholder="Cuisine"
                 value={formData.cuisine}
                 onChange={handleChange}
-                placeholder="Cuisine"
               />
             </td>
 
             <td>
               <input
+                type="text"
                 name="photo"
+                placeholder="Photo URL"
                 value={formData.photo}
                 onChange={handleChange}
-                placeholder="Photo URL"
               />
             </td>
 
             <td>
               <textarea
                 name="ingredients"
+                placeholder="Ingredients"
                 value={formData.ingredients}
                 onChange={handleChange}
-                placeholder="Ingredients"
               />
             </td>
 
             <td>
               <textarea
                 name="preparation"
+                placeholder="Preparation"
                 value={formData.preparation}
                 onChange={handleChange}
-                placeholder="Preparation"
               />
             </td>
 
