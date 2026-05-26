@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/recipe-crud-app/static/css/main.2dbf3bf5.css",
+    "main.js": "/recipe-crud-app/static/js/main.c8da7209.js",
+    "index.html": "/recipe-crud-app/index.html",
+    "main.2dbf3bf5.css.map": "/recipe-crud-app/static/css/main.2dbf3bf5.css.map",
+    "main.c8da7209.js.map": "/recipe-crud-app/static/js/main.c8da7209.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2dbf3bf5.css",
+    "static/js/main.c8da7209.js"
+  ]
+}
